@@ -1,1 +1,1 @@
-powershell C:\Users\Ankur.8.Gupta\Desktop\sni\main.ps1
+powershell main.ps1
