@@ -1,0 +1,9 @@
+//Conversion from all sort of vedabase fonts/langs TO all script(devnagri, bengali oriya etc) 
+
+//https://scriptoq.com/tools/diCrunch/diCrunch.php
+
+//Download the entire code also - diCrunch.. 
+
+// link for download
+
+//http://scriptoq.com/tools/diCrunch/diCrunch.zip
