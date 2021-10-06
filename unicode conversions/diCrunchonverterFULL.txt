@@ -7,3 +7,6 @@
 // link for download
 
 //http://scriptoq.com/tools/diCrunch/diCrunch.zip
+
+//Placed in Github repo too
+//https://github.com/ankurgupta10/scripts/tree/main/unicode%20conversions/
