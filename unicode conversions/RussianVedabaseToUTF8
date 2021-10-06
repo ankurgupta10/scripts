@@ -1,0 +1,77 @@
+function conv (){
+
+                var text = document.converter.text.value;
+
+                text=text.replace(/à/g, "а");
+                text=text.replace(/À/g, "А");
+                text=text.replace(/á/g, "б");
+                text=text.replace(/Á/g, "Б");
+                text=text.replace(/â/g, "в");
+                text=text.replace(/Â/g, "В");
+                text=text.replace(/ã/g, "г");
+                text=text.replace(/Ã/g, "Г");
+                text=text.replace(/ä/g, "д");
+                text=text.replace(/Ä/g, "Д");
+                text=text.replace(/å/g, "е");
+                text=text.replace(/Å/g, "Е");
+                text=text.replace(/¸/g, "ё");
+                text=text.replace(/¸/g, "Ё");
+                text=text.replace(/æ/g, "ж");
+                text=text.replace(/Æ/g, "Ж");
+                text=text.replace(/ç/g, "з");
+                text=text.replace(/Ç/g, "З");
+                text=text.replace(/è/g, "и");
+                text=text.replace(/È/g, "И");
+                text=text.replace(/ê/g, "к");
+                text=text.replace(/Ê/g, "К");
+                text=text.replace(/ë/g, "л");
+                text=text.replace(/Ë/g, "Л");
+                text=text.replace(/ì/g, "м");
+                text=text.replace(/Ì/g, "М");
+                text=text.replace(/í/g, "н");
+                text=text.replace(/Í/g, "Н");
+                text=text.replace(/î/g, "о");
+                text=text.replace(/Î/g, "О");
+                text=text.replace(/ï/g, "п");
+                text=text.replace(/Ï/g, "П");
+                text=text.replace(/ð/g, "р");
+                text=text.replace(/Ð/g, "Р");
+                text=text.replace(/ñ/g, "с");
+                text=text.replace(/Ñ/g, "С");
+                text=text.replace(/ò/g, "т");
+                text=text.replace(/Ò/g, "Т");
+                text=text.replace(/ó/g, "у");
+                text=text.replace(/Ó/g, "У");
+                text=text.replace(/ô/g, "ф");
+                text=text.replace(/Ô/g, "Ф");
+                text=text.replace(/õ/g, "х");
+                text=text.replace(/õ/g, "Х");
+                text=text.replace(/÷/g, "ч");
+                text=text.replace(/÷/g, "Ч");
+                text=text.replace(/ö/g, "ц");
+                text=text.replace(/Ö/g, "Ц");
+                text=text.replace(/ø/g, "ш");
+                text=text.replace(/Ø/g, "Ш");
+                text=text.replace(/ù/g, "щ");
+                text=text.replace(/ù/g, "Щ");
+                text=text.replace(/ü/g, "ь");
+                text=text.replace(/ü/g, "Ь");
+                text=text.replace(/û/g, "ы");
+                text=text.replace(/û/g, "Ы");
+                text=text.replace(/Ú/g, "ъ");
+                text=text.replace(/Ú/g, "Ъ");
+                text=text.replace(/ý/g, "э");
+                text=text.replace(/Ý/g, "Э");
+                text=text.replace(/þ/g, "ю");
+                text=text.replace(/Þ/g, "Ю");
+                text=text.replace(/ÿ/g, "я");
+                text=text.replace(/ß/g, "Я");
+                text=text.replace(/é/g, "й");
+                text=text.replace(/É/g, "Й");
+
+
+
+                document.converter.text.value = text;
+                document.converter.text.focus();
+                document.converter.text.select();
+            };
