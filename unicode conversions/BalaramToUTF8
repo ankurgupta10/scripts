@@ -1,0 +1,51 @@
+function conv (){
+
+      var text = document.converter.text.value;
+
+      text=text.replace(//g, "fi");
+      text=text.replace(//g, "fl");
+      text=text.replace(/ä/g, "ā");
+      text=text.replace(/é/g, "ī");
+      text=text.replace(/ü/g, "ū");
+      text=text.replace(/å/g, "ṛ");
+      text=text.replace(/è/g, "ṝ");
+      text=text.replace(/ì/g, "ṅ");
+      text=text.replace(/ñ/g, "ṣ");
+      text=text.replace(/ï/g, "ñ");
+      text=text.replace(/ö/g, "ṭ");
+      text=text.replace(/ò/g, "ḍ");
+      text=text.replace(/ë/g, "ṇ");
+      text=text.replace(/ç/g, "ś");
+      text=text.replace(/à/g, "ṁ");
+      text=text.replace(/ù/g, "ḥ");
+      text=text.replace(/ÿ/g, "ḷ");
+      text=text.replace(/û/g, "ḹ");
+      text=text.replace(/Ä/g, "Ā");
+      text=text.replace(/É/g, "Ī");
+      text=text.replace(/Ü/g, "Ū");
+      text=text.replace(/Å/g, "Ṛ");
+      text=text.replace(/È/g, "Ṝ");
+      text=text.replace(/Ì/g, "Ṅ");
+      text=text.replace(/Ñ/g, "Ṣ");
+      text=text.replace(/Ï/g, "Ñ");
+      text=text.replace(/Ö/g, "Ṭ");
+      text=text.replace(/Ò/g, "Ḍ");
+      text=text.replace(/Ë/g, "Ṇ");
+      text=text.replace(/Ç/g, "Ś");
+      text=text.replace(/À/g, "Ṁ");
+      text=text.replace(/Ù/g, "Ḥ");
+      text=text.replace(/ß/g, "Ḷ");
+      text=text.replace(//g, "“");
+      text=text.replace(//g, "”");
+      text=text.replace(/ /g, " ");
+      text=text.replace(//g, "‘");
+      text=text.replace(//g, "-");
+      text=text.replace(//g, "’");
+      text=text.replace(//g, "—");
+      text=text.replace(//g, "»");
+      text=text.replace(//g, "...");
+
+      document.converter.text.value = text;
+      document.converter.text.focus();
+      document.converter.text.select();
+    };
