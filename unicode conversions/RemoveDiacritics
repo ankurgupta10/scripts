@@ -1,3 +1,4 @@
+//Removes diacritics in Sanskrit transliteration from the text
 function conv (){
 
       var text = document.converter.text.value;
