@@ -1,0 +1,35 @@
+function conv (){
+                var text = document.converter.text.value;
+
+                text=text.replace(/å/g, "ā");
+                text=text.replace(/î/g, "ī");
+                text=text.replace(/ü/g, "ū");
+                text=text.replace(/®/g, "ṛ");
+                text=text.replace(/è/g, "ṝ");
+                text=text.replace(/õ/g, "ṅ");
+                text=text.replace(/ß/g, "ñ");
+                text=text.replace(/†/g, "ṭ");
+                text=text.replace(/∂/g, "ḍ");
+                text=text.replace(/∫/g, "ṇ");
+                text=text.replace(/Ω/g, "ś");
+                text=text.replace(/µ/g, "ṁ");
+                text=text.replace(/˙/g, "ḥ");
+                text=text.replace(/ÿ/g, "ḷ");
+                text=text.replace(/Ä/g, "Ā");
+                text=text.replace(/É/g, "Ī");
+                text=text.replace(/Ü/g, "Ū");
+                text=text.replace(/Å/g, "Ṛ");
+                text=text.replace(/È/g, "Ṝ");
+                text=text.replace(/Ì/g, "Ṅ");
+                text=text.replace(/Ñ/g, "Ṣ");
+                text=text.replace(/Ö/g, "Ṭ");
+                text=text.replace(/Ò/g, "Ḍ");
+                text=text.replace(/Ë/g, "Ṇ");
+                text=text.replace(/Ç/g, "Ś");
+                text=text.replace(/À/g, "Ṁ");
+                text=text.replace(/Ù/g, "Ḥ");
+
+                document.converter.text.value = text;
+                document.converter.text.focus();
+                document.converter.text.select();
+            };
