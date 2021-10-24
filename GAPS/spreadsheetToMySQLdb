@@ -1,0 +1,65 @@
+function spreadsheetToMySQLdb(){
+
+  //Fetch data from Google SS
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var data = sheet.getDataRange().getValues();
+  
+  //using sameer's db for the time being
+  var server = "184.168.97.220"
+  var server = "sg2plzcpnl471121.prod.sin2.secureserver.net"
+  var dbName = "artron"
+  var username= "fydibti5q888"  
+  var password= "Harekrsna01236"
+  var port = 3306 ;
+  
+  //var url = "jdbc:mysql://" + server + ":" + port + "/" + dbName;
+  var url = "jdbc:mysql://" + server + ":" + port + "/" + dbName + "?useUnicode=true&characterEncoding=UTF-8";
+  var conn = Jdbc.getConnection(url, username, password);
+  //WORKING OK
+  
+  
+  /*
+  //SELECT on db
+  var stmt = conn.createStatement();
+  var results = stmt.executeQuery('SELECT * FROM vsong');
+  var metaData=results.getMetaData();
+  var numCols = metaData.getColumnCount();
+  console.log(numCols)
+  while(results.next()){
+    console.log(results.getString(2))
+  }
+  //*/
+
+
+  //INSERT on db
+  var cols="sno,officialNameHindi,firstLineHindi,authorHindi,bookNameHindi,songHindi,meaningHindi,officialNameEng,firstLineEng,authorEng,bookNameEng,songEng,meaningEng,mantra,aarti,allSong,Sanskrit,searchText";
+  var ins = "INSERT INTO vsong (" + cols + ") VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) "
+
+  for(var i=1;i<210;i++){
+    var stmt = conn.prepareStatement(ins)
+    stmt.setString(1,data[i][0]);
+    stmt.setString(2,data[i][1]);
+    stmt.setString(3,data[i][2]);
+    stmt.setString(4,data[i][3]);
+    stmt.setString(5,data[i][4]);
+    stmt.setString(6,data[i][5]);
+    stmt.setString(7,data[i][6]);
+    stmt.setString(8,data[i][7]);
+    stmt.setString(9,data[i][8]);
+    stmt.setString(10,data[i][9]);
+    stmt.setString(11,data[i][10]);
+    stmt.setString(12,data[i][11]);
+    stmt.setString(13,data[i][12]);
+    stmt.setString(14,data[i][13]==''?0:data[i][13]);
+    stmt.setString(15,data[i][14]==''?0:data[i][14]);
+    stmt.setString(16,data[i][15]==''?0:data[i][15]);
+    stmt.setString(17,data[i][16]==''?0:data[i][16]);
+    stmt.setString(18,data[i][17]);
+
+    var res = stmt.execute();
+    console.log(i);    
+  }
+
+  //conn.commit(); //auto commit by default
+  conn.close();
+}
